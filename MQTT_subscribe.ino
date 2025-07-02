@@ -66,13 +66,13 @@ void mqttSubscriptionCallback( char* topic, byte* payload, unsigned int length )
   if (((String)data["xxxx"]).toInt() > 500) // replace x with field1, field2, field3
   {
     digitalWrite(0, HIGH);
-    analogWrite(5, 255);
+    analogWrite(5, 255); // run motor - please put motor module with transistor + diode(prevent backflow)
     Serial.println("LED ON");
   }
   else
   {
     digitalWrite(0, LOW);
-    analogWrite(5, 0);
+    analogWrite(5, 0); // switch off motor
     Serial.println("LED OFF");
   }
   if (((String)data["field2"]).toInt() > 80) // replace x with field1, field2, field3
