@@ -1,0 +1,8 @@
+1. Thingspeak channel
+2. https://www.silabs.com/developer-tools/usb-to-uart-bridge-vcp-drivers --> Driver
+3. Install esp8266 library : http://arduino.esp8266.com/stable/package_esp8266com_index.json (additional board manager URL field)
+4. Install esp8266 library by esp8266 community from library tab in arduino ide (step 3 prerequiste)
+5. Install DHT library by adafruit
+6. Thingspeak library by mathworks
+7. PubSubClient library by  Nick o'Leary
+8. Arduino_JSON by Arduino
